@@ -38,12 +38,17 @@
                         <li class="nav-item">
                             <a href="{{ route('movies.index') }}" class="nav-link">  Movies </a>
                         </li>
+
+                        <li class="nav-item">
+                            <a href="{{ route('users.index') }}" class="nav-link">  Users </a>
+                        </li>
+
                     @endif
 
 
                     @if(Auth::user() && Auth::user()-> role == '0')
                         <li class="nav-item">
-                            <a href="" class="nav-link"> My Fav Movies </a>
+                            <a href="{{ route('user.movies') }}" class="nav-link"> My Fav Movies </a>
                         </li>
 
                     @endif

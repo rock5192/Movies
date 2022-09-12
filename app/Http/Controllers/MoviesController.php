@@ -48,6 +48,7 @@ class MoviesController extends Controller
     {
 
         $user = Auth::user();
+
         $user->movies()->attach($id);
         return redirect('/');
 

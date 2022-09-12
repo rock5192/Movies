@@ -17,8 +17,14 @@
                         <h5 class="card-title">{{$movies['title']}}</h5>
                         <p class="card-text">{{ $movies['description'] }}</p>
                         <p class="card-text">{{ $movies['release_date'] }}</p>
-                        <p>Count of Likes : 12</p>
-                        <a href="{{ route('movies.favourite',['id' => $movies['id']]) }}" class="btn btn-primary">Favourite</a>
+
+
+                        <p style="color:red;">No. of
+                            Likes: {{ $fav->where('movies_id',$movies['id'])->count() }}</p>
+
+
+                        <a href="{{ route('movies.favourite',['id' => $movies['id']]) }}"
+                           class="btn btn-primary">Favourite</a>
                     </div>
                 </div>
             @endif
