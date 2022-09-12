@@ -28,6 +28,7 @@ Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function(){
     Route::get('/movies/add',[MoviesController::class,'index'])->name('movies.index');
     Route::get('/movies/create',[MoviesController::class,'create'])->name('movies.create');
     Route::post('/movies/store',[MoviesController::class,'store'])->name('movies.store');
+    Route::post('/movies/add',[MoviesController::class,'getData'])->name('movies.index');
     Route::get('/users/index',[UsersController::class,'index'])->name('users.index');
 });
 

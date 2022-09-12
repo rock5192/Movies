@@ -10,7 +10,7 @@
 
             @if($movies['published'] == '1')
 
-                <div class="card" style="width: 18rem; box-shadow: 10px 10px">
+                <div class="card" style="width: 18rem; box-shadow: 10px 5px">
                     <img src="{{ asset('/uploads/posters/'.$movies['poster']) }}"
                          class="card-img-top" alt="poster" height="300px; width:300px;">
                     <div class="card-body">

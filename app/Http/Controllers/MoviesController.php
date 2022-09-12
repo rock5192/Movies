@@ -54,4 +54,16 @@ class MoviesController extends Controller
 
 
     }
+
+    public function getData(Request $request)
+    {
+        $searchTerm = $request->keyword;
+        $dateFrom = $request->datefrom;
+        $dateTo = $request->dateto;
+
+
+        $movie = Movies::where('title', 'LIKE', "%{$searchTerm}%")->whereBetween('release_date',[$dateFrom." 00:00:00",$dateTo." 23:59:59"])->get();
+
+        return view('Movies.movies')->with('movie',$movie);
+    }
 }
