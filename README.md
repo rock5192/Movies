@@ -8,7 +8,7 @@
 ![image](https://user-images.githubusercontent.com/49632797/189684699-f5702a7d-98d3-459b-b745-62ff57fc2b5c.png)
 
 <h2> Admin Movies </h2>
-![Capture4](https://user-images.githubusercontent.com/49632797/189684210-67547bca-468c-43c9-8803-46eaef64a4cb.PNG)
+![image](https://user-images.githubusercontent.com/49632797/189685070-52ecbaf6-b02c-4ead-bff3-f51973087e3f.png)
 
 <h2> User Fav Movies </h2>
-![Capture5](https://user-images.githubusercontent.com/49632797/189684266-495ed61e-5b30-4aee-8b46-c3e280eca0db.PNG)
+![image](https://user-images.githubusercontent.com/49632797/189685302-d1a1c291-714f-4652-9d9e-40e61ac4597a.png)
