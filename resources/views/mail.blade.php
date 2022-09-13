@@ -1,1 +1,1 @@
-You have successfully selected the favourites.
+You have successfully selected the favourites !!!
