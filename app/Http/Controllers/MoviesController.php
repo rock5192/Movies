@@ -7,6 +7,7 @@ use App\Models\Movies;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 
 class MoviesController extends Controller
 {
@@ -48,8 +49,13 @@ class MoviesController extends Controller
     {
 
         $user = Auth::user();
-
         $user->movies()->attach($id);
+        $data=['You have successfully selected the favourites'];
+        $users['to'] = 'saujanya93@gmail.com';
+        Mail::send('mail',$data,function($messages) use ($users){
+            $messages->to('saujanya93@gmail.com');
+            $messages->subject('You have selected the favourite');
+        });
         return redirect('/');
 
 

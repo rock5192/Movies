@@ -22,9 +22,14 @@
                         <p style="color:red;">No. of
                             Likes: {{ $fav->where('movies_id',$movies['id'])->count() }}</p>
 
+                        @if(Auth::user())
+                            <a href="{{ route('movies.favourite',['id' => $movies['id']]) }}"
+                               class="btn btn-primary">Favourite</a>
 
-                        <a href="{{ route('movies.favourite',['id' => $movies['id']]) }}"
-                           class="btn btn-primary">Favourite</a>
+
+
+
+                        @endif
                     </div>
                 </div>
             @endif
